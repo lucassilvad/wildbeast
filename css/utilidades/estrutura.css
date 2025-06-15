@@ -5,6 +5,7 @@
     "header header header"
     "sidenav content anuncios"
     "footer footer footer";
+  justify-content: center;
 }
 
 .header {
