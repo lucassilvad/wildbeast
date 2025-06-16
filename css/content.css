@@ -16,19 +16,25 @@
 .titulo h1 {
   font-size: 3.75rem;
   line-height: 1;
+  font-weight: 700;
+}
+
+.titulo span {
+  font-style: italic;
 }
 
 .caracteristicas {
-  display: grid;
-  grid-template-columns: max-content max-content;
+  display: flex;
   gap: 20px;
-  justify-items: start;
+}
+
+.caracteristicas > div {
+  box-shadow: 5px 5px 15px rgba(44, 44, 44, 0.15);
 }
 
 .caracteristicas span {
   display: block;
   text-align: center;
-  align-self: start;
   color: #b07dfb;
 }
 
@@ -36,14 +42,13 @@
   background: #b07dfb;
   padding: 10px 20px;
   font-size: 3rem;
-  border-radius: 5px 5px;
+  border-radius: 5px 5px 0 0;
   background: linear-gradient(#84e, #b07dfb);
 }
 
 .caracteristicas .rotulo {
   background: #fff;
-  box-shadow: 5px 5px 15px rgba(44, 44, 44, 0.1);
-  padding: 2px 4px;
+  padding: 4px 8px;
   border-radius: 0 0 5px 5px;
   color: #b07dfb;
 }
@@ -51,16 +56,17 @@
 .content p {
   font-size: 1.25rem;
   line-height: 1.4;
-  color: #000000b3;
+  letter-spacing: -0.005rem;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 p.detalhe {
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #b07dfb;
   align-self: start;
   grid-column: 2;
   grid-row: 3;
-  max-width: 224px;
+  max-width: 256px;
 }
 
 .imagem-1,
@@ -73,30 +79,33 @@ p.detalhe {
   grid-row: span 2;
 }
 
-.citacao {
-  padding: 30px;
-  text-align: center;
+.citacao,
+.atributos {
   background: linear-gradient(135deg, #84e, #b07dfb);
   border-radius: 4px;
+  padding: 30px;
+  box-shadow: 5px 5px 15px rgba(44, 44, 44, 0.15);
 }
 
 .citacao p {
   font-size: 1.5rem;
   color: #fff;
   font-style: italic;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 500px;
 }
 
 .atributos {
-  background: linear-gradient(135deg, #84e, #b07dfb);
   justify-self: stretch;
-  padding: 30px;
+  align-self: start;
   box-sizing: border-box;
   color: #fff;
   font-size: 1.125rem;
-  border-radius: 5px;
 }
 
 .atributos li {
+  font-family: Courier, monospace;
   padding: 15px;
 }
 
@@ -104,11 +113,11 @@ p.detalhe {
   border-top: 2px solid #b07dfb;
 }
 
-.info-agrupada {
+.informacoes {
   align-self: start;
 }
 
-.info-agrupada p + p {
+.informacoes p + p {
   margin-top: 40px;
 }
 
