@@ -1,6 +1,6 @@
-.sidenav {
+.sidenav nav {
   background: #fafbfc;
-  padding: 30px;
+  /* padding: 30px; */
 }
 
 .sidenav li a {
@@ -17,4 +17,14 @@
 
 .sidenav li a:hover {
   background: #b07dfb;
+}
+
+@media (max-width: 760px) {
+  .sidenav ul {
+    padding: 30px 30px 15px 30px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    overflow-x: scroll;
+  }
 }

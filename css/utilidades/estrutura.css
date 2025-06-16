@@ -23,3 +23,36 @@
 .footer {
   grid-area: footer;
 }
+
+@media (max-width: 930px) {
+  .estrutura {
+    grid-template-areas:
+      "header header header"
+      "sidenav content content"
+      "sidenav anuncios anuncios"
+      "footer footer footer";
+  }
+}
+
+@media (max-width: 760px) {
+  .estrutura {
+    grid-template-areas:
+      "header header header"
+      "sidenav sidenav sidenav"
+      "content content content"
+      "anuncios anuncios anuncios"
+      "footer footer footer";
+  }
+}
+
+@media (max-width: 620px) {
+  .estrutura {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header header header"
+      "sidenav sidenav sidenav"
+      "content content content"
+      "anuncios anuncios anuncios"
+      "footer footer footer";
+  }
+}

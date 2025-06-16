@@ -13,6 +13,10 @@
 
 @import "./sidenav.css";
 
+/* Conteúdo */
+
+@import "./content.css";
+
 /* Anúncios */
 
 @import "./anuncios.css";
