@@ -1,13 +1,9 @@
 .anuncios {
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+
   align-content: start;
   background: #fafbfc;
   padding: 30px;
   gap: 30px;
-}
-
-@media (max-width: 930px) {
-  .anuncios {
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  }
 }

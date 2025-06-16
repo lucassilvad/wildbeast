@@ -19,12 +19,41 @@
   background: #b07dfb;
 }
 
+@keyframes seta {
+  from {
+    right: 30px;
+  }
+  to {
+    right: 20px;
+  }
+}
+
 @media (max-width: 760px) {
+  .sidenav {
+    position: relative;
+  }
+
+  .sidenav::after {
+    content: "→";
+    position: absolute;
+    top: 5px;
+    right: 30px;
+    color: rgba(0, 0, 0, 0.3);
+    animation: seta 0.5s ease-in 0s infinite alternate;
+  }
+
   .sidenav ul {
-    padding: 30px 30px 15px 30px;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    display: flex;
     gap: 20px;
     overflow-x: scroll;
+    padding: 30px;
+  }
+
+  .sidenav ul li {
+    flex: 1 0 60px;
+  }
+
+  .sidenav li a {
+    margin-bottom: 0;
   }
 }

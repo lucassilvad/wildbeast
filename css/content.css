@@ -40,7 +40,7 @@
 
 .caracteristicas .numero {
   background: #b07dfb;
-  padding: 10px 20px;
+  padding: 10px 20px 5px 20px;
   font-size: 3rem;
   border-radius: 5px 5px 0 0;
   background: linear-gradient(#84e, #b07dfb);
@@ -121,9 +121,19 @@ p.detalhe {
   margin-top: 40px;
 }
 
+@media (max-width: 900px) {
+  .caracteristicas {
+    justify-content: end;
+  }
+}
+
 @media (max-width: 620px) {
   .content {
     grid-template-columns: 1fr;
+  }
+
+  .caracteristicas {
+    justify-content: start;
   }
 
   p.detalhe {
